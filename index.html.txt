@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lulia Korean Notes</title>
+</head>
+<body>
+  <h1>مرحباً بك في موقع لوليا 🌸</h1>
+  <p>أدخل كلمة المرور للدخول:</p>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">دخول</button>
+
+  <!-- ده المحتوى اللي هيظهر بعد الباسوورد -->
+  <div id="content" style="display:none;">
+    <h2>ملاحظاتي في اللغة الكورية</h2>
+    <ul>
+      <li>안녕하세요 = مرحباً</li>
+      <li>사랑 = حب</li>
+      <li>감사합니다 = شكراً</li>
+    </ul>
+  </div>
+
+  <script>
+    function checkPassword() {
+      var pass = document.getElementById("password").value;
+      if (pass === "lulia123") { // غيري كلمة المرور هنا لو عايزة
+        document.getElementById("content").style.display = "block";
+      } else {
+        alert("كلمة المرور غير صحيحة!");
+      }
+    }
+  </script>
+</body>
+</html>
