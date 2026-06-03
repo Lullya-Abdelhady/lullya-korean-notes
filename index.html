@@ -2,41 +2,36 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Lulia Korean Notes</title>
+  <title>Lullya's Website</title>
 </head>
-<body>
-  <h1>Welcome to Lullya's Website</h1>
-  <p>Enter the password to login:</p>
-  <input type="password" id="password">
-  <button onclick="checkPassword()">Go</button>
 
-  <!-- المحتوى اللي هيظهر بعد كلمة المرور -->
-  <div id="content" style="display:none;">
-    <h2>My Korean Notes</h2>
-    <ul>
-      <li>안녕하세요 = مرحباً</li>
-      <li>사랑 = حب</li>
-      <li>감사합니다 = شكراً</li>
-    </ul>
-    <p>🌸These are my personal notes for learning Korean .</p>
+<body style="background-color: lavender; display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column;">
+
+  <div style="border:2px solid purple; border-radius:30px; padding:30px; background-color:white; box-shadow:0 0 15px rgba(0,0,0,0.2);">
+    <h1 style="margin-bottom:20px;">Welcome to Lullya's Website</h1>
+    <p>Enter the password to login:</p>
+    <input type="password" id="password" 
+      style="padding:10px; border-radius:25px; border:2px solid purple; width:200px; text-align:center;">
+    
+    <button onclick="checkPassword()" 
+      style="margin-top:15px; padding:10px 20px; border-radius:25px; border:none; background-color:purple; color:white; cursor:pointer;">
+      Go
+    </button>
   </div>
 
   <script>
     function checkPassword() {
       var pass = document.getElementById("password").value;
-      if (pass === "lulia123") { // غيري كلمة المرور هنا لو عايزة
-        document.getElementById("content").style.display = "block";
+      // غيري كلمة المرور هنا لو عايزة
+      if (pass === "lulia123") {
+        alert("Password correct! 🌸");
+        window.location.href = "notes.html"; // هنا الصفحة اللي هتفتح بعد كلمة المرور
       } else {
-        alert("كلمة المرور غير صحيحة!");
+        alert("Wrong password, try again!");
       }
     }
   </script>
-<<body style="background-color: lavender;display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column;" <div style="border:2px solid purple; border-radius:30px; padding:30px; background-color:white; box-shadow:0 0 15px rgba(0,0,0,0.2);">
-رسالة Copilot
 
-Smart
-
-> display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column;">
->
->
+</body>
 </html>
+
