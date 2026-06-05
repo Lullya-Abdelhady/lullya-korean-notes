@@ -2,28 +2,71 @@
 <html>
 <head>
   <meta charset="UTF-8">
-   <title>Lullya's Website</title>
- <style>
+  <title>Lullya’s Website</title>
+  <style>
+    body {
+      background-color: lavender;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
 
-</style> 
+    h1 {
+      color: purple;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
 
+    h1:hover {
+      color: hotpink;
+      transform: scale(1.2);
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 25px;
+      border: 2px solid purple;
+      width: 200px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      background-color: purple;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: hotpink;
+    }
+
+    .container {
+      border: 2px solid purple;
+      border-radius: 30px;
+      padding: 30px;
+      background-color: white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-
-<body style="background-color: lavender; display:flex; justify-content:center; align-items:center; height:100vh; flex-direction:column;">
-
-<img src="flag.png.png" alt="South Korea Flag" style="width:120px; margin-bottom:20px;">
-
-  <div style="border:2px solid purple; border-radius:30px; padding:30px; background-color:white; box-shadow:0 0 15px rgba(0,0,0,0.2);">
-    
-    <h1 style="margin-bottom:20px;">Welcome to Lullya's Website</h1>
+<body>
+  <img src="flag.png.png" alt="South Korea Flag">
+  <div class="container">
+    <h1>Welcome to Lullya's Website</h1>
     <p>Enter the password to login:</p>
-    <input type="password" id="password" 
-      style="padding:10px; border-radius:25px; border:2px solid purple; width:200px; text-align:center;">
-    
-    <button onclick="checkPassword()" 
-      style="margin-top:15px; padding:10px 20px; border-radius:25px; border:none; background-color:purple; color:white; cursor:pointer;">
-      Go
-    </button>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Go</button>
   </div>
 
   <script>
@@ -32,13 +75,11 @@
       // غيري كلمة المرور هنا لو عايزة
       if (pass === "lulia123") {
         alert("Password correct! 🌸");
-        window.location.href = "notes.html"; // هنا الصفحة اللي هتفتح بعد كلمة المرور
+        window.location.href = "notes.html"; // الصفحة اللي هتفتح بعد كلمة المرور
       } else {
         alert("Wrong password, try again!");
       }
     }
   </script>
-
 </body>
 </html>
-
