@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Lullya's Korean Notes 🌸</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Cairo', sans-serif;
@@ -11,41 +11,11 @@
       background-color: #f9f9f9;
       text-align: center;
     }
-    header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 12px 20px;
-    }
-    header h1 {
-      font-family: 'Pacifico', cursive;
-      font-size: 22px;
-      margin: 0;
-      line-height: 1.1;
-      font-weight: normal;
-    }
-    header p {
-      font-family: 'Cairo', sans-serif;
-      font-size: 14px;
-      margin: 4px 0 0;
-      font-weight: 400;
-      color: #fff;
-    }
-    .hero {
-      background: url('namsan.jpg') no-repeat center center;
-      background-size: cover;
-      height: 220px;
-      margin-top: 10px;
-      border-radius: 20px;
-      overflow: hidden;
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+
     h2.title {
       font-size: 22px;
-      font-weight: bold; /* سميك */
-      color: #3949ab; /* كحلي فاتح وواضح */
+      font-weight: bold;
+      color: #3949ab; /* كحلي فاتح */
       margin: 20px 0 5px;
       position: relative;
       display: inline-block;
@@ -56,94 +26,98 @@
       display: inline-block;
       width: 50px;
       height: 1px;
-      background: #3949ab; /* نفس الكحلي الفاتح */
+      background: #3949ab;
       vertical-align: middle;
       margin: 0 10px;
     }
+
     .subtitle {
       font-size: 14px;
-      font-weight: 400; /* رفيع */
+      font-weight: 400;
       color: #555;
       margin: 5px 0 20px;
     }
+
     table {
       margin: 15px auto;
       border-collapse: collapse;
       width: 80%;
+      font-size: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
     }
+
     th, td {
       border: 1px solid #ccc;
-      padding: 8px;
+      padding: 10px;
+      text-align: center;
     }
+
     th {
-      background-color: #eee;
+      background-color: #e3f2fd; /* أزرق فاتح */
+      color: #333;
+      font-weight: bold;
     }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9; /* صفوف متبادلة */
+    }
+
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    td {
+      color: #444;
+    }
+
     .btn-pink {
       background-color: #ff69b4;
       color: white;
-      padding: 8px 16px;
+      padding: 10px 20px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      margin: 10px;
+      margin: 15px 0;
+      font-size: 14px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
-    .btn-blue {
-      background-color: #4a90e2;
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      margin: 10px;
-    }
-    .section {
-      margin: 20px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      background-color: #fff;
-    }
-    footer {
-      background-color: #f0f0f0;
-      padding: 10px;
-      margin-top: 20px;
-      font-size: 13px;
+
+    .btn-pink:hover {
+      background-color: #ff85c1;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Lullya's Korean Notes 🌸</h1>
-    <p>Learn Korean with Lullya</p>
-  </header>
-
-  <div class="hero"></div>
 
   <h2 class="title">Basic Korean Words</h2>
   <p class="subtitle">Learn some essential Korean vocabulary!</p>
 
   <table>
-    <tr><th>الكلمة الكورية</th><th>النطق</th><th>الكلمة العربية</th></tr>
-    <tr><td>감사합니다</td><td>Gamsahamnida</td><td>شكراً</td></tr>
-    <tr><td>안녕하세요</td><td>Annyeonghaseyo</td><td>مرحباً</td></tr>
-    <tr><td>안녕히 가세요</td><td>Annyeonghi gaseyo</td><td>وداعاً</td></tr>
+    <tr>
+      <th>الكلمة الكورية</th>
+      <th>النطق</th>
+      <th>الكلمة العربية</th>
+    </tr>
+    <tr>
+      <td>감사합니다</td>
+      <td>Gamsahamnida</td>
+      <td>شكراً</td>
+    </tr>
+    <tr>
+      <td>안녕하세요</td>
+      <td>Annyeonghaseyo</td>
+      <td>مرحباً</td>
+    </tr>
+    <tr>
+      <td>안녕히 가세요</td>
+      <td>Annyeonghi gaseyo</td>
+      <td>وداعاً</td>
+    </tr>
   </table>
+
   <button class="btn-pink">Start learning</button>
 
-  <div class="section">
-    <h3>K-Pop Songs</h3>
-    <p>Learn Korean with popular K-Pop hits!</p>
-    <button class="btn-pink">Explore Songs</button>
-  </div>
-
-  <div class="section">
-    <h3>Grammar Tips</h3>
-    <p>Improve your Korean grammar skills!</p>
-    <button class="btn-blue">View Tips</button>
-  </div>
-
-  <footer>
-    Made with 💜 by Lullya
-  </footer>
 </body>
 </html>
