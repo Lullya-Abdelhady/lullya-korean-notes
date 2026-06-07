@@ -12,6 +12,36 @@
       text-align: center;
     }
 
+    header {
+      background-color: #4a90e2; /* أزرق للهيدر */
+      color: white;
+      padding: 15px 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 24px;
+      margin: 0;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 14px;
+      margin: 5px 0 0;
+      font-weight: 400;
+    }
+
+    .hero {
+      background: url('namsan.jpg') no-repeat center center; /* هنا ضيفي صورة البانر */
+      background-size: cover;
+      height: 220px;
+      margin-top: 10px;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
     h2.title {
       font-size: 22px;
       font-weight: bold;
@@ -72,6 +102,10 @@
       color: #444;
     }
 
+    tr:hover {
+      background-color: #e8f0fe; /* تأثير عند المرور بالماوس */
+    }
+
     .btn-pink {
       background-color: #ff69b4;
       color: white;
@@ -82,14 +116,30 @@
       margin: 15px 0;
       font-size: 14px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
     }
 
     .btn-pink:hover {
       background-color: #ff85c1;
     }
+
+    footer {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #333;
+    }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Lullya's Korean Notes 🌸</h1>
+    <p>Learn Korean with Lullya</p>
+  </header>
+
+  <div class="hero"></div> <!-- صورة البانر هنا -->
 
   <h2 class="title">Basic Korean Words</h2>
   <p class="subtitle">Learn some essential Korean vocabulary!</p>
@@ -118,6 +168,10 @@
   </table>
 
   <button class="btn-pink">Start learning</button>
+
+  <footer>
+    Made with 💜 by Lullya
+  </footer>
 
 </body>
 </html>
